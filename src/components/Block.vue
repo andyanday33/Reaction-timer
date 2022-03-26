@@ -28,6 +28,7 @@ export default {
         },
         stopTimer() {
             clearInterval(this.timer)
+            this.$emit('end', this.reactionTime)
         }
     }
 }
@@ -37,7 +38,7 @@ export default {
     .block {
         width: 400px;
         border-radius : 20px;
-        background: #099dca;
+        background: rgb(19, 153, 206);
         text-align: center;
         padding: 100px 0;
         margin: 40px auto;
